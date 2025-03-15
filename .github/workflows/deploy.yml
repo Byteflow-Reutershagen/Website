@@ -1,0 +1,31 @@
+name: Deploy to Web Server
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          version: "1.2.2"
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Build application
+        run: bun run generate
+
+      - name: SFTP upload
+        uses: Dylan700/sftp-upload-action@latest
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 22
+          uploads: |
+            ./.output/public => ./
+          delete: "true"
