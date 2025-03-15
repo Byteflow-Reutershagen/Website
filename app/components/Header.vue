@@ -5,9 +5,16 @@
     <div class="flex items-center gap-4">
       <ColorScheme>
         <img
-          :src="`/logo-${$colorMode.value}.svg`"
+          src="/logo-light.svg"
           alt="Logo"
           class="size-12"
+          :style="{ opacity: +($colorMode.value === 'light') }"
+        />
+        <img
+          src="/logo-dark.svg"
+          alt="Logo"
+          class="size-12 absolute"
+          :style="{ opacity: +($colorMode.value === 'dark') }"
         />
       </ColorScheme>
       <h1 class="text-xl font-bold">Byteflow Reutershagen</h1>
@@ -28,7 +35,7 @@
   </header>
 </template>
 
-<style>
+<style scoped>
 header {
   position: sticky;
   top: 0;
@@ -40,6 +47,10 @@ header {
 
 .light-mode header {
   background-color: #eeed;
+}
+
+img {
+  transition: opacity var(--dark-mode-transition-duration);
 }
 
 #toggle-theme {

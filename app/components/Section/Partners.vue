@@ -11,10 +11,19 @@
     <ul id="partners" class="basis-1/2">
       <a href="https://gymnasium-reutershagen.de/" target="_blank">
         <li>
-          <img
-            src="/images/partners/logo-gy-reutershagen.svg"
-            alt="Gymnasium Reutershagen"
-          />
+          <ColorScheme>
+            <img
+              src="/images/partners/logo-gy-reutershagen-light.svg"
+              alt="Gymnasium Reutershagen"
+              :style="{ opacity: +($colorMode.value === 'light') }"
+            />
+            <img
+              src="/images/partners/logo-gy-reutershagen-dark.svg"
+              alt="Gymnasium Reutershagen"
+              class="absolute"
+              :style="{ opacity: +($colorMode.value === 'dark') }"
+            />
+          </ColorScheme>
           <div>Gymnasium Reutershagen</div>
         </li>
       </a>
@@ -115,5 +124,6 @@ h2::after {
   width: 60px;
   height: 60px;
   object-fit: contain;
+  transition: opacity var(--dark-mode-transition-duration);
 }
 </style>
