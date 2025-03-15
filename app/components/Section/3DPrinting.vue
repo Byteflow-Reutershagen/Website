@@ -22,7 +22,7 @@
     <img
       src="/images/3d-printing.jpeg"
       alt="Programmierung"
-      class="rounded-xl basis-1/2 w-full aspect-4/3 object-cover"
+      class="rounded-xl basis-1/2 w-full aspect-4/3 object-cover max-w-[50%]"
     />
   </section>
 </template>
