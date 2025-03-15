@@ -1,0 +1,100 @@
+<script lang="ts" setup></script>
+
+<template>
+  <section class="flex flex-col md:flex-row items-center gap-6 mx-6 my-24">
+    <div class="basis-1/2">
+      <h2 class="text-3xl font-semibold mb-3">Unsere Partner</h2>
+      <p>
+        Gemeinsam mit unseren Partnern setzen wir auf Innovation und Qualität.
+      </p>
+    </div>
+    <ul id="partners" class="basis-1/2">
+      <a href="https://gymnasium-reutershagen.de/" target="_blank">
+        <li>
+          <img
+            src="/images/partners/logo-gy-reutershagen.svg"
+            alt="Gymnasium Reutershagen"
+          />
+          <div>Gymnasium Reutershagen</div>
+        </li>
+      </a>
+      <a href="https://mikromint.de/sfzrostock/" target="_blank">
+        <li>
+          <img
+            src="/images/partners/logo-sfz.png"
+            alt="Schülerforschungszentrum"
+          />
+          <div>MikroMint Schüler&shy;forschungs&shy;zentrum</div>
+        </li>
+      </a>
+      <a href="https://rst-rostock.de/" target="_blank">
+        <li>
+          <img
+            src="https://www.rst-rostock.de/typo3conf/ext/rst_theme/Resources/Public/Images/logo-ohne-text-rst.svg"
+            alt="Rostock System-Technik"
+          />
+          <div>Rostock System-Technik</div>
+        </li>
+      </a>
+    </ul>
+  </section>
+</template>
+
+<style scoped>
+h2::after {
+  content: "";
+  display: block;
+  width: 4rem;
+  height: 2px;
+  background-color: var(--color-maya-blue);
+  margin: 0.5rem 0 1rem;
+}
+
+#partners {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#partners div {
+  font-size: 1.125rem;
+  font-weight: medium;
+  color: #ccc;
+}
+
+.light-mode #partners div {
+  color: #444;
+}
+
+#partners li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #aaa1;
+}
+
+#partners li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 3px;
+  border-radius: 12px;
+  background: linear-gradient(10deg, #aaa3, #fffa);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.light-mode #partners li::before {
+  background: linear-gradient(10deg, #8884, #888a);
+}
+
+#partners li img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+</style>

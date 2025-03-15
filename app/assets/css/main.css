@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+
+  --dark-mode-transition-duration: 0.5s;
+
+  --color-rich-black: #0d1117ff;
+  --color-prussian-blue: #0b3954ff;
+  --color-maya-blue: #71c1efff;
+  --color-floral-white: #faf9f0ff;
+  --color-auburn: #ac3931ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans bg-rich-black text-floral-white;
+}
+
+.light-mode body {
+  @apply bg-floral-white text-rich-black;
+}
+
+* {
+  transition: background-color var(--dark-mode-transition-duration),
+    border-color var(--dark-mode-transition-duration),
+    color var(--dark-mode-transition-duration);
+}
+
+p {
+  color: #aaa;
+}
+
+.light-mode p {
+  color: #555;
+}
