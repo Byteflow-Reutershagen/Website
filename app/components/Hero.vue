@@ -3,7 +3,7 @@
 <template>
   <div
     id="hero"
-    class="h-96 flex flex-col items-center justify-center text-center"
+    class="h-148 flex flex-col items-center justify-center text-center"
   >
     <h1 class="text-4xl font-bold mb-4">Software und 3D-Druck für alle</h1>
     <p class="text-lg mb-6">

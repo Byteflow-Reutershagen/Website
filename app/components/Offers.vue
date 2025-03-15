@@ -2,7 +2,7 @@
 
 <template>
   <h2 class="text-3xl font-semibold text-center mb-8">Unser Angebot</h2>
-  <section class="grid md:grid-cols-3 gap-4">
+  <section class="grid md:grid-cols-3 gap-4 px-6 mx-auto max-w-7xl">
     <OfferCard
       title="Software"
       icon="i-lucide-code"
