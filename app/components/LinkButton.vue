@@ -25,10 +25,14 @@ const props = defineProps<{
 <style scoped>
 a {
   text-shadow: none;
-  transition: filter 0.2s ease-out;
+  transition: color var(--dark-mode-transition-duration), filter 0.2s ease-out;
 }
 
 a:hover {
   filter: brightness(0.9);
+}
+
+.iconify {
+  transition: none;
 }
 </style>

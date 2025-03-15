@@ -26,8 +26,16 @@ body {
 
 * {
   transition: background-color var(--dark-mode-transition-duration),
-    border-color var(--dark-mode-transition-duration),
-    color var(--dark-mode-transition-duration);
+    border-color var(--dark-mode-transition-duration);
+}
+
+h1,
+h2,
+h3,
+p,
+footer,
+.iconify {
+  transition: color var(--dark-mode-transition-duration);
 }
 
 p {

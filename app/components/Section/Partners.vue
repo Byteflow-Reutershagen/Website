@@ -60,6 +60,7 @@ h2::after {
   font-size: 1.125rem;
   font-weight: medium;
   color: #ccc;
+  transition: color var(--dark-mode-transition-duration);
 }
 
 .light-mode #partners div {
@@ -76,20 +77,38 @@ h2::after {
   background-color: #aaa1;
 }
 
+@property --gradient-color-1 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #aaa3;
+}
+@property --gradient-color-2 {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #fffa;
+}
+
 #partners li::before {
   content: "";
   position: absolute;
   inset: 0;
   padding: 3px;
   border-radius: 12px;
-  background: linear-gradient(10deg, #aaa3, #fffa);
+  background: linear-gradient(
+    10deg,
+    var(--gradient-color-1),
+    var(--gradient-color-2)
+  );
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
   pointer-events: none;
+  transition: --gradient-color-1 var(--dark-mode-transition-duration),
+    --gradient-color-2 var(--dark-mode-transition-duration);
 }
 
 .light-mode #partners li::before {
-  background: linear-gradient(10deg, #8884, #888a);
+  --gradient-color-1: #8884;
+  --gradient-color-2: #888a;
 }
 
 #partners li img {

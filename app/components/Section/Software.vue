@@ -50,6 +50,9 @@
   color: #ddd;
   padding: 0.125rem 0.325rem;
   border-radius: 0.375rem;
+  transition: color var(--dark-mode-transition-duration),
+    background-color var(--dark-mode-transition-duration),
+    border-color var(--dark-mode-transition-duration);
 }
 
 .light-mode .feature-list li {
