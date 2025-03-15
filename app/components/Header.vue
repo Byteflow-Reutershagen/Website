@@ -1,4 +1,17 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const colorMode = useColorMode();
+const modes = ["system", "dark", "light"];
+const icons = ["moon", "sun", "monitor"];
+
+function getModeIndex(mode: string) {
+  return modes.indexOf(mode);
+}
+
+function cycleTheme() {
+  colorMode.preference =
+    modes[(getModeIndex(colorMode.preference) + 1) % modes.length]!;
+}
+</script>
 
 <template>
   <header class="flex items-center justify-between p-4">
@@ -21,14 +34,11 @@
     </div>
     <button
       id="toggle-theme"
-      @click="
-        $colorMode.preference =
-          $colorMode.preference === 'light' ? 'dark' : 'light'
-      "
+      @click="cycleTheme"
       class="rounded-md hover:bg-gray-400/10 p-1.5 aspect-square"
     >
       <Icon
-        :name="$colorMode.value === 'light' ? 'i-lucide-moon' : 'i-lucide-sun'"
+        :name="'i-lucide-' + icons[getModeIndex(colorMode.preference)]"
         size="20"
       />
     </button>
