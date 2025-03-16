@@ -4,6 +4,9 @@ on: push
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
