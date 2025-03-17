@@ -30,7 +30,7 @@ function cycleTheme() {
           :style="{ opacity: +($colorMode.value === 'dark') }"
         />
       </ColorScheme>
-      <h1 class="text-xl font-bold">Byteflow Reutershagen</h1>
+      <a href="/"><h1 class="text-xl font-bold">Byteflow Reutershagen</h1></a>
     </div>
     <button
       id="toggle-theme"
