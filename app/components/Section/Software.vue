@@ -7,7 +7,7 @@
     <img
       src="/images/software.jpeg"
       alt="Programmierung"
-      class="rounded-xl basis-1/2 aspect-4/3 object-cover max-w-[50%]"
+      class="rounded-xl basis-[50%] aspect-4/3 object-cover max-h-96"
     />
     <div class="basis-1/2">
       <h3 class="text-2xl font-semibold mb-2">Individuelle Softwarelösungen</h3>
