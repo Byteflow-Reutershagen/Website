@@ -1,5 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
   <Hero />
   <Offers />
@@ -9,6 +7,7 @@
     <SectionAwards />
     <SectionPartners />
     <SectionTeam />
+    <SectionNewsroom />
     <SectionContact />
   </div>
 </template>
