@@ -39,7 +39,7 @@
       <a href="https://rst-rostock.de/" target="_blank">
         <li>
           <img
-            src="https://www.rst-rostock.de/typo3conf/ext/rst_theme/Resources/Public/Images/logo-ohne-text-rst.svg"
+            src="/images/partners/logo-rst.svg"
             alt="Rostock System-Technik"
           />
           <div>Rostock System-Technik</div>
