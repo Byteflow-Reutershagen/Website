@@ -5,7 +5,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     environment:
-      name: production
+      name: ${{ github.ref == 'refs/heads/main' && 'production' || 'preview' }}
       url: ${{ vars.URL }}
     steps:
       - name: Checkout
@@ -17,9 +17,11 @@ jobs:
           version: "1.2.2"
 
       - name: Install dependencies
+        working-directory: frontend
         run: bun install
 
       - name: Build application
+        working-directory: frontend
         run: bun run generate
 
       - name: SFTP upload
@@ -30,5 +32,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 22
           uploads: |
-            ./.output/public => ./
-          delete: "true"
+            . => .
+            ./frontend/.output/public => ./frontend/dist
+          ignore: |
+            frontend
+            articles
+            **/.git*

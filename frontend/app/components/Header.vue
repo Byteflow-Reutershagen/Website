@@ -32,20 +32,23 @@ function cycleTheme() {
       </ColorScheme>
       <a href="/"><h1 class="text-xl font-bold">Byteflow Reutershagen</h1></a>
     </div>
-    <button
-      id="toggle-theme"
-      @click="cycleTheme"
-      class="rounded-md hover:bg-gray-400/10 p-1.5 aspect-square"
-    >
-      <Icon
-        :name="'i-lucide-' + icons[getModeIndex(colorMode.preference)]"
-        size="20"
-      />
-    </button>
+    <div id="header-buttons" class="flex items-center gap-2">
+      <button id="toggle-theme" @click="cycleTheme">
+        <Icon
+          :name="'i-lucide-' + icons[getModeIndex(colorMode.preference)]"
+          size="20"
+        />
+      </button>
+      <button v-if="$route.path !== '/'" @click="navigateTo('/')">
+        <Icon name="i-lucide-home" size="20" />
+      </button>
+    </div>
   </header>
 </template>
 
 <style scoped>
+@reference "tailwindcss";
+
 header {
   position: sticky;
   top: 0;
@@ -63,7 +66,8 @@ img {
   transition: opacity var(--dark-mode-transition-duration);
 }
 
-#toggle-theme {
+#header-buttons button {
+  @apply rounded-md hover:bg-gray-400/10 p-1.5 size-8;
   transition: background-color 0.2s;
 }
 </style>

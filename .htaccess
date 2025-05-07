@@ -1,0 +1,24 @@
+Options -Indexes
+RewriteEngine On
+
+# Article attachments
+RewriteCond %{REQUEST_URI} !read$
+RewriteRule ^article/([^/]+)/([^/]+)$ /api/article/attachment.php?id=$1&file=$2 [L]
+
+# API routing
+RewriteRule ^api/articles/?$ /api/article/preview.php [L]
+RewriteRule ^api/article/latest/?$ /api/article/preview.php?latest [L]
+
+RewriteCond %{REQUEST_URI} !^/api/article/.*\.php
+RewriteRule ^api/article/([^/]+)/?$ /api/article/index.php?id=$1 [L,QSA]
+
+# Serve static files from Nuxt
+RewriteCond %{REQUEST_URI} !^/api
+RewriteCond %{DOCUMENT_ROOT}/frontend/dist%{REQUEST_URI} -f
+RewriteRule ^ /frontend/dist%{REQUEST_URI} [L]
+RewriteRule ^$ /frontend/dist/index.html [L]
+
+# SPA routing as fallback
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /frontend/dist/index.html [L]
