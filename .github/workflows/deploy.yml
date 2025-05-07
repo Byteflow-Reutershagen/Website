@@ -37,4 +37,4 @@ jobs:
           ignore: |
             frontend
             articles
-          delete: "true"
+            **/.git*
