@@ -67,7 +67,7 @@ img {
 }
 
 #header-buttons button {
-  @apply rounded-md hover:bg-gray-400/10 p-1.5 aspect-square;
+  @apply rounded-md hover:bg-gray-400/10 p-1.5 size-8;
   transition: background-color 0.2s;
 }
 </style>
