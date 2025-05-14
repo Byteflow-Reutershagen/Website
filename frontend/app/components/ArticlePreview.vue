@@ -6,7 +6,17 @@ const { article } = defineProps<{
 
 <template>
   <a :href="'/article/' + article.id + '/read'">
-    <div class="article-preview" v-html="article.content"></div>
+    <div class="article-preview">
+      <div v-html="article.content" />
+      <div class="text-gray-500 mt-1">
+        {{
+          new Date(article.id).toLocaleString("de-DE", {
+            dateStyle: "medium",
+            timeStyle: "short",
+          })
+        }}
+      </div>
+    </div>
   </a>
 </template>
 

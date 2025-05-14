@@ -12,6 +12,15 @@ const { data: content } = await useFetch(
       <LinkButton href="/newsroom" icon="i-lucide-newspaper" class="mb-2 w-max">
         Zum Newsroom
       </LinkButton>
+      <div id="date" class="flex flex-row gap-1.5 items-center mt-4">
+        <Icon name="i-lucide-calendar" />
+        {{
+          new Date(route.params.id).toLocaleString("de-DE", {
+            dateStyle: "long",
+            timeStyle: "short",
+          })
+        }}
+      </div>
       <article v-html="content" class=""></article>
     </div>
   </div>
@@ -20,8 +29,17 @@ const { data: content } = await useFetch(
 <style>
 @reference "tailwindcss";
 
+#date {
+  @apply text-gray-400;
+  transition: color var(--dark-mode-transition-duration);
+}
+
+.light-mode #date {
+  @apply text-gray-500;
+}
+
 article h1 {
-  @apply text-3xl font-bold mb-3.5 mt-6;
+  @apply text-3xl font-bold mb-3.5 mt-3;
 }
 
 article h2 {
