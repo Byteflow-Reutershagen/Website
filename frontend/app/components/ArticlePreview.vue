@@ -8,7 +8,7 @@ const { article } = defineProps<{
   <a :href="'/article/' + article.id + '/read'">
     <div class="article-preview">
       <div v-html="article.content" />
-      <div class="text-gray-500 mt-1">
+      <div class="text-[#888] text-sm mt-1">
         {{
           new Date(article.id).toLocaleString("de-DE", {
             dateStyle: "medium",
@@ -25,7 +25,7 @@ const { article } = defineProps<{
 
 .article-preview {
   @apply shadow-md w-full p-4 rounded-xl;
-  background-color: #5551;
+  background-color: #9992;
   transition: box-shadow 0.2s;
   line-clamp: 3;
 }
