@@ -12,6 +12,18 @@ export default defineNuxtConfig({
 
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      proxy: {
+        "/api": {
+          target: "http://localhost:8080",
+          changeOrigin: true,
+        },
+        "^/article/[^/]+/(?!read$)[^/]+$": {
+          target: "http://localhost:8080",
+          changeOrigin: true,
+        },
+      },
+    },
   },
 
   modules: ["@nuxt/fonts", "@nuxtjs/color-mode", "@nuxt/icon"],
