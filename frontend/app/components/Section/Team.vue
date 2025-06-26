@@ -22,6 +22,7 @@
 p {
   margin-bottom: 1rem;
   max-width: calc(max(80%, 30rem));
+  text-wrap: pretty;
 }
 
 img {

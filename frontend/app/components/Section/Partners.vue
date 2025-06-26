@@ -126,4 +126,8 @@ h2::after {
   object-fit: contain;
   transition: opacity var(--dark-mode-transition-duration);
 }
+
+#partners li div {
+  text-wrap: balance;
+}
 </style>
