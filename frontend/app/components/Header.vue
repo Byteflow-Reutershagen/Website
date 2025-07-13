@@ -16,20 +16,12 @@ function cycleTheme() {
 <template>
   <header class="flex items-center justify-between p-4">
     <div class="flex items-center gap-4">
-      <ColorScheme>
-        <img
-          src="/logo-light.svg"
-          alt="Logo"
-          class="size-12"
-          :style="{ opacity: +($colorMode.value === 'light') }"
-        />
-        <img
-          src="/logo-dark.svg"
-          alt="Logo"
-          class="size-12 absolute"
-          :style="{ opacity: +($colorMode.value === 'dark') }"
-        />
-      </ColorScheme>
+      <ThemeImage
+        light="/logo-light.svg"
+        dark="/logo-dark.svg"
+        alt="Logo"
+        class="size-12"
+      />
       <a href="/"><h1 class="text-xl font-bold">Byteflow Reutershagen</h1></a>
     </div>
     <div id="header-buttons" class="flex items-center gap-2">

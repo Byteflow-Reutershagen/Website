@@ -24,15 +24,23 @@
         <div id="languages" class="flex flex-wrap gap-4 mt-4">
           <img src="/images/languages/python.svg" alt="Python" />
           <img src="/images/languages/unity.svg" alt="Unity" />
-          <img src="/images/languages/html.svg" alt="HTML" />
-          <img src="/images/languages/css.svg" alt="CSS" />
+          <ThemeImage
+            light="/images/languages/html.svg"
+            dark="/images/languages/html-dark.svg"
+            alt="HTML"
+          />
+          <ThemeImage
+            light="/images/languages/css.svg"
+            dark="/images/languages/css-dark.svg"
+            alt="CSS"
+          />
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
+<style>
 #languages img {
   height: 2.5rem;
 }
@@ -58,5 +66,9 @@
   background-color: #eee;
   border-color: #ddd;
   color: #333;
+}
+
+img {
+  transition: opacity var(--dark-mode-transition-duration);
 }
 </style>
