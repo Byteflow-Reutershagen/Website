@@ -6,8 +6,8 @@
     <p>
       Wir sind eine Schülergenossenschaft am Gymnasium Reutershagen in Rostock.
       Gemeinsam gestalten wir Projekte, lernen voneinander und entwickeln
-      Techniklösungen, die zeigen, was mit Engagement und Teamgeist im
-      Schulalltag möglich ist.
+      Techniklösungen, die zeigen, was mit Teamarbeit im Schulalltag möglich
+      ist.
     </p>
     <p>
       <b>Byteflow Reutershagen</b> wurde am 10. Juni 2024 von sechs
@@ -18,10 +18,10 @@
     </p>
     <p>
       Um eine Zukunft für das Projekt zu sichern, fanden sich elf weitere
-      Schüler:innen aus verschiedenen Jahrgängen, die motiviert an der
-      Schülerfirma mitarbeiten wollten. Als die Gründungsmitglieder im Sommer
-      2025 ihr Abitur abgelegt und die Schule verlassen haben, übergaben sie
-      Byteflow an ein motiviertes neues Team.
+      Schüler:innen aus verschiedenen Jahrgängen, die gerne an der Schülerfirma
+      mitarbeiten wollten. Als die Gründungsmitglieder im Sommer 2025 ihr Abitur
+      abgelegt und die Schule verlassen haben, übergaben sie Byteflow an ein
+      motiviertes neues Team.
     </p>
     <img src="/images/team.jpeg" alt="Das Team von Byteflow" />
   </section>

@@ -6,7 +6,7 @@
     <OfferCard
       title="Software"
       icon="i-lucide-code"
-      description="Wir bieten für sowohl Privatkunden als auch für Unternehmen die Entwicklung von Webseiten, Internetanwendungen und viel mehr an."
+      description="Wir bieten für sowohl Privatkunden als auch für Unternehmen die Entwicklung von Programmen, Websites und viel mehr an – in einer Vielzahl von Sprachen und Frameworks."
     />
     <OfferCard
       title="Videoschnitt"
@@ -16,7 +16,7 @@
     <OfferCard
       title="3D-Druck"
       icon="i-lucide-printer"
-      description="Mit unserem 3D-Druck-Service erwecken wir Ihre Ideen zum Leben. Wir übernehmen alles von der Gestaltung bis zum Endprodukt."
+      description="Mit unserem 3D-Druck-Service erwecken wir Ihre Ideen zum Leben. Wir übernehmen alles von der Gestaltung bis zum Endprodukt und haben eine Vielzahl von Materialien."
     />
   </section>
 </template>
