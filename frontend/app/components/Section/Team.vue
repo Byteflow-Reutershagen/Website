@@ -4,15 +4,24 @@
   <section class="flex flex-col items-center text-center my-12">
     <h2 class="text-2xl font-semibold mb-4">Wir sind Byteflow Reutershagen</h2>
     <p>
-      Wir sind eine Schülergenossenschaft am Gymnasium Reutershagen in Rostock,
-      die es sich zur Aufgabe gemacht hat, Firmen bei der Modernisierung zu
-      helfen und qualitative Software für alle zugänglich zu machen.
+      Wir sind eine Schülergenossenschaft am Gymnasium Reutershagen in Rostock.
+      Gemeinsam gestalten wir Projekte, lernen voneinander und entwickeln
+      Techniklösungen, die zeigen, was mit Engagement und Teamgeist im
+      Schulalltag möglich ist.
     </p>
     <p>
-      <b>Byteflow Reutershagen</b> wurde am 10. Juni 2024 mit Fokus auf
-      Softwareentwicklung gegründet und obwohl die 3D-Druck-Abteilung erst
-      relativ inaktiv war, hat sie stark an Bedeutung gewonnen und ist nun ein
-      Bestandteil unseres Unternehmens, der nicht wegzudenken ist.
+      <b>Byteflow Reutershagen</b> wurde am 10. Juni 2024 von sechs
+      Schüler:innen als Softwarefirma gegründet. Später ist die
+      3D-Druck-Abteilung hinzugekommen, die zuerst relativ inaktiv war, dann
+      aber stark an Bedeutung gewonnen hat und nun nicht mehr aus der
+      Schülerfirma wegzudenken ist.
+    </p>
+    <p>
+      Um eine Zukunft für das Projekt zu sichern, fanden sich elf weitere
+      Schüler:innen aus verschiedenen Jahrgängen, die motiviert an der
+      Schülerfirma mitarbeiten wollten. Als die Gründungsmitglieder im Sommer
+      2025 ihr Abitur abgelegt und die Schule verlassen haben, übergaben sie
+      Byteflow an ein motiviertes neues Team.
     </p>
     <img src="/images/team.jpeg" alt="Das Team von Byteflow" />
   </section>
