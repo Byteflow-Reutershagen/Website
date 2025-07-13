@@ -19,7 +19,7 @@ const { data: article } = await useFetch<{ id: string; content: string }>(
 
 <style scoped>
 section {
-  max-width: calc(max(80%, 30rem));
+  max-width: 50rem;
 }
 
 h2::after {

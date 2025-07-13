@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { data: articles } = await useFetch<{ id: string; content: string }[]>(
-  useOrigin() + "/api/articles"
+  useOrigin() + "/api/articles",
+  { default: () => [] }
 );
 </script>
 
@@ -9,7 +10,12 @@ const { data: articles } = await useFetch<{ id: string; content: string }[]>(
     <main>
       <h1 class="text-3xl font-bold mb-1">Newsroom</h1>
       <p class="mb-4">
-        Hier sind alle Artikel, die auf unserer Website veröffentlicht wurden.
+        <template v-if="articles.length">
+          Hier sind alle Artikel, die auf unserer Website veröffentlicht wurden.
+        </template>
+        <template v-else>
+          Aktuell wurden noch keine Artikel veröffentlicht.
+        </template>
       </p>
       <div v-for="article in articles" class="mb-4">
         <ArticlePreview :article="article" />
@@ -20,6 +26,6 @@ const { data: articles } = await useFetch<{ id: string; content: string }[]>(
 
 <style scoped>
 main {
-  max-width: calc(max(80%, 30rem));
+  max-width: 50rem;
 }
 </style>

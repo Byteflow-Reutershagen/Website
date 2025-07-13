@@ -3,6 +3,12 @@
 require "markdown.php";
 
 $articlesDir = dirname(__DIR__, 2) . "/articles/";
+
+if (!is_dir($articlesDir)) {
+    http_response_code(404);
+    exit;
+}
+
 $files = array_filter(scandir($articlesDir, SCANDIR_SORT_DESCENDING), fn($id) => $id !== "." && $id !== "..");
 
 function getArticleContent($id) {
@@ -12,6 +18,14 @@ function getArticleContent($id) {
 }
 
 header("Content-Type: application/json");
-echo json_encode(array_key_exists("latest", $_GET) ?? false ? getArticleContent($files[0]) ?? http_response_code(404) && ["error" => "Article not found"] : array_map("getArticleContent", $files));
+if (array_key_exists("latest", $_GET) ?? false) {
+    if (empty($files)) {
+        http_response_code(404);
+        exit;
+    }
+    echo json_encode(getArticleContent($files[0]));
+} else {
+    echo json_encode(array_map("getArticleContent", $files));
+}
 
 ?>
