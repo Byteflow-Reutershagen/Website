@@ -16,5 +16,12 @@
 <style scoped>
 p {
   max-width: calc(max(60%, 30rem));
+  text-wrap: balance;
+}
+
+@supports (text-wrap: pretty) {
+  p {
+    text-wrap: pretty;
+  }
 }
 </style>

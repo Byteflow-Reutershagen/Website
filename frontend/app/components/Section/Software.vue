@@ -23,17 +23,24 @@
         </ul>
         <div id="languages" class="flex flex-wrap gap-4 mt-4">
           <img src="/images/languages/python.svg" alt="Python" />
-          <img src="/images/languages/java.svg" alt="Java" />
-          <img src="/images/languages/php.svg" alt="PHP" />
-          <img src="/images/languages/typescript.svg" alt="TypeScript" />
-          <img src="/images/languages/nuxt.svg" alt="Nuxt" />
+          <img src="/images/languages/unity.svg" alt="Unity" />
+          <ThemeImage
+            light="/images/languages/html.svg"
+            dark="/images/languages/html-dark.svg"
+            alt="HTML"
+          />
+          <ThemeImage
+            light="/images/languages/css.svg"
+            dark="/images/languages/css-dark.svg"
+            alt="CSS"
+          />
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style scoped>
+<style>
 #languages img {
   height: 2.5rem;
 }

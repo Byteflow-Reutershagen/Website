@@ -6,17 +6,17 @@
     <OfferCard
       title="Software"
       icon="i-lucide-code"
-      description="Wir bieten für sowohl Privatkunden als auch für Unternehmen die Ent&shy;wicklung von Programmen, Web Apps und viel mehr an."
+      description="Wir bieten für sowohl Privatkunden als auch für Unternehmen die Entwicklung von Programmen, Websites und viel mehr an – in einer Vielzahl von Sprachen und Frameworks."
     />
     <OfferCard
-      title="Automati&shy;sie&shy;rung"
-      icon="i-lucide-cog"
-      description="Wir machen Ihr Unter&shy;nehmen produktiver, indem wir bislang manuelle Prozesse mit maßge&shy;schnei&shy;derten Software&shy;lösungen auto&shy;mati&shy;sieren."
+      title="Videoschnitt"
+      icon="i-lucide-clapperboard"
+      description="Unser professionelles Cutting-Team setzt Ihre Wünsche in die Realität um. Unser Angebot reicht von Intros über kurze Werbeclips bis zur Bearbeitung langer Vorlesungen."
     />
     <OfferCard
       title="3D-Druck"
       icon="i-lucide-printer"
-      description="Mit unserem 3D-Druck-Service erwecken wir deine Ideen zum Leben. Wir übernehmen alles von der Gestaltung bis zum Endprodukt."
+      description="Mit unserem 3D-Druck-Service erwecken wir Ihre Ideen zum Leben. Wir übernehmen alles von der Gestaltung bis zum Endprodukt und haben eine Vielzahl von Materialien."
     />
   </section>
 </template>

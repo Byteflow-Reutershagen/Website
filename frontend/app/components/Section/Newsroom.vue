@@ -10,8 +10,10 @@ const { data: article } = await useFetch<{ id: string; content: string }>(
   <section v-if="article" class="mx-auto my-20">
     <h2 class="text-3xl font-semibold mb-3">Neues aus dem Newsroom</h2>
     <p class="mb-3">
-      <a href="/newsroom" class="text-maya-blue">Hier</a> veröffentlichen wir
-      unsere wichtigsten Neuigkeiten.
+      Hier veröffentlichen wir unsere wichtigsten Neuigkeiten.
+      <a href="/newsroom" class="text-maya-blue">
+        Mehr <Icon name="i-lucide-chevron-right" class="relative top-[3px]" />
+      </a>
     </p>
     <ArticlePreview :article="article" />
   </section>

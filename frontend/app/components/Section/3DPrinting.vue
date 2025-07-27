@@ -9,13 +9,13 @@
       <div>
         <p class="mt-2">
           Perfekte Designs und professioneller 3D-Druck für Schule, Hobby oder
-          professionelle Projekte. Von der Idee bis zum fertigen Produkt –
-          präzise und zuverlässig.
+          anspruchsvolle Projekte. Von der Idee bis zum fertigen Produkt – wir
+          arbeiten präzise und zuverlässig.
         </p>
         <ul class="feature-list mt-3 mb-6 text-sm">
           <li>Persönliche Beratung</li>
-          <li>Qualitativ</li>
-          <li class="line-through text-[#888]!">Filament-Recycling</li>
+          <li>Viele Farben & Materialien</li>
+          <li>Große Sorgfalt</li>
         </ul>
       </div>
     </div>
