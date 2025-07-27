@@ -67,8 +67,4 @@
   border-color: #ddd;
   color: #333;
 }
-
-img {
-  transition: opacity var(--dark-mode-transition-duration);
-}
 </style>
