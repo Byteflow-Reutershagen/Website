@@ -28,7 +28,7 @@
       </LinkButton>
       <LinkButton
         href="https://www.tiktok.com/@byteflow.reutershagen"
-        icon="i-lucide-tiktok"
+        icon="i-lucide-music-2"
         subtle
       >
         byteflow.reutershagen
