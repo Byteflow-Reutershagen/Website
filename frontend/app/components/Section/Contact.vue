@@ -17,7 +17,21 @@
         icon="i-lucide-instagram"
         subtle
       >
-        byteflow_reutershagen
+        Byteflow_Reutershagen
+      </LinkButton>
+      <LinkButton
+        href=""
+        icon="i-lucide-facebook"
+        subtle
+      >
+        Byteflow Reutershagen
+      </LinkButton>
+      <LinkButton
+        href="https://www.tiktok.com/@byteflow.reutershagen"
+        icon="i-lucide-music-2"
+        subtle
+      >
+        byteflow.reutershagen
       </LinkButton>
     </div>
   </section>
