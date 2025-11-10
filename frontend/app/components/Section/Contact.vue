@@ -13,6 +13,7 @@
         kontakt@byteflow-reutershagen.de
       </LinkButton>
     </div>
+    <br>
     <div class="flex flex-wrap gap-2">
       <LinkButton
         href="https://www.instagram.com/byteflow_reutershagen/"
@@ -36,6 +37,7 @@
         byteflow.reutershagen
       </LinkButton>
     </div>
+    <br>
     <p>Mathias-Thesen-Straße 17, 18069 Rostock</p>
   </section>
 </template>
