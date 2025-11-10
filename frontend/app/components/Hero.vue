@@ -3,13 +3,13 @@
 <template>
   <div
     id="hero"
-    class="h-148 flex flex-col items-center justify-center text-center"
+    class="flex flex-col items-center justify-center text-center"
   >
     <h1 class="text-4xl font-bold mb-4 px-2 text-balance">
-      Software und 3D-Druck für alle
+      Kreativität, die funktioniert
     </h1>
     <p class="text-lg mb-6 px-2 text-balance">
-      Wir gestalten digitale Lösungen, alle aus einer Hand.
+      Wir entwickeln Websites, schneiden Videos und drucken Ideen - professionell und mit Liebe zum Detail
     </p>
     <div class="flex flex-col sm:flex-row gap-2">
       <LinkButton
@@ -19,7 +19,8 @@
       >
         Introvideo ansehen
       </LinkButton>
-      <LinkButton href="#kontakt" subtle> Jetzt Kontakt aufnehmen </LinkButton>
+      <LinkButton href="#kontakt" subtle> Kontaktieren Sie uns </LinkButton>
+      <LinkButton href="#team" subtle> Lernen Sie uns kennen </LinkButton>
     </div>
   </div>
 </template>
@@ -35,6 +36,7 @@
   position: relative;
   overflow-x: hidden;
   overflow-y: clip;
+  height: calc(var(--spacing)*75);
 }
 
 .light-mode #hero {

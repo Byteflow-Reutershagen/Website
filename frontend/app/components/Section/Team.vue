@@ -1,29 +1,36 @@
 <script lang="ts" setup></script>
 
 <template>
-  <section class="flex flex-col items-center text-center my-12">
-    <h2 class="text-2xl font-semibold mb-4">Wir sind Byteflow Reutershagen</h2>
-    <p>
-      Wir sind eine Schülergenossenschaft am Gymnasium Reutershagen in Rostock.
-      Gemeinsam gestalten wir Projekte, lernen voneinander und entwickeln
-      Techniklösungen, die zeigen, was mit Teamarbeit im Schulalltag möglich
-      ist.
-    </p>
-    <p>
-      <b>Byteflow Reutershagen</b> wurde am 10. Juni 2024 von sechs
-      Schüler:innen als Softwarefirma gegründet. Später ist die
-      3D-Druck-Abteilung hinzugekommen, die zuerst relativ inaktiv war, dann
-      aber stark an Bedeutung gewonnen hat und nun nicht mehr aus der
-      Schülerfirma wegzudenken ist.
-    </p>
-    <p>
-      Um eine Zukunft für das Projekt zu sichern, fanden sich elf weitere
-      Schüler:innen aus verschiedenen Jahrgängen, die gerne an der Schülerfirma
-      mitarbeiten wollten. Als die Gründungsmitglieder im Sommer 2025 ihr Abitur
-      abgelegt und die Schule verlassen haben, übergaben sie Byteflow an ein
-      motiviertes neues Team.
-    </p>
+  <section id="team" class="flex flex-col items-center text-center my-12">
+    <h2 class="text-2xl font-semibold mb-4">Unser Team</h2>
     <img src="/images/team.jpeg" alt="Das Team von Byteflow" />
+    <p>
+      Wir sind Byteflow Reutershagen, die Schülerfirma des Gymnasiums
+      Reutershagen aus Rostock. 
+    </p>
+    <p>
+      Sie wurde im Juni 2024 von 6 Schülerinnen und Schülern gegründet, und
+      wächst seitdem ständig. Heute arbeiten 11 Schülerinnen und Schüler
+      gemeinsam mit unseren zahlreichen Kunden an verschiedensten spannenden
+      Projekten.
+    </p>
+    <p>
+      Seit jeher ist die Softwareentwicklung unsere große Stärke, doch durch neue
+      Mitglieder kamen neue Komptenzen in unsere Firma, sodass unsere 3D-
+      Drucker aus unserem Angebot mittlerweile nicht mehr wegzudenken sind.
+    </p>
+    <p>
+      Seit diesem Jahr wollen wir auch unser Angebot in Richtung des Videoschnitts
+      mit neuen, professionellen Mitglieder erweitern.
+    </p>
+    <div class="member-div">
+      <img class="member-pic" src="/images/people/placeholder.png" alt="person">
+      <h2 class="member-name">Emil Walthemath - Vorstand</h2>
+      <p class="member-description">
+        Kümmert sich um die Vermarktung und schneidet Videos.
+      </p>
+      <a class="member-email" href="mailto:emil.walthemath@byteflow-reutershagen.de">emil.walthemath@byteflow-reutershagen.de</a>
+    </div>
   </section>
 </template>
 
@@ -49,5 +56,31 @@ h2::after {
   height: 2px;
   background-color: var(--color-maya-blue);
   margin: 0.5rem auto;
+}
+.member-div {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+      "Pic  name"
+      "Pic  description"
+      "Pic  email";
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #aaa1;
+}
+.member-pic {
+  grid-area: Pic;
+  border-radius: 8px;
+}
+.member-name {
+  grid-area: name;
+}
+.member-description {
+  grid-area: description;
+}
+.member-email {
+  grid-area: email;
 }
 </style>
