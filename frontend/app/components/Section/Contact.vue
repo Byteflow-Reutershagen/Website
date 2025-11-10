@@ -3,7 +3,7 @@
 <template>
   <section id="kontakt" class="mx-auto my-20">
     <h2 class="text-3xl font-semibold mb-3">Kontakt</h2>
-    <p class="mb-3">So kann man uns erreichen:</p>
+    <p class="mb-3">Kontaktieren Sie uns:</p>
     <div class="flex flex-wrap gap-2">
       <LinkButton
         href="mailto:kontakt@byteflow-reutershagen.de"
@@ -12,6 +12,8 @@
       >
         kontakt@byteflow-reutershagen.de
       </LinkButton>
+    </div>
+    <div class="flex flex-wrap gap-2">
       <LinkButton
         href="https://www.instagram.com/byteflow_reutershagen/"
         icon="i-lucide-instagram"
@@ -34,6 +36,7 @@
         byteflow.reutershagen
       </LinkButton>
     </div>
+    <p>Mathias-Thesen-Straße 17, 18069 Rostock</p>
   </section>
 </template>
 

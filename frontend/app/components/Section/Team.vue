@@ -29,7 +29,12 @@
       <p class="member-description">
         Kümmert sich um die Vermarktung und schneidet Videos.
       </p>
-      <a class="member-email" href="mailto:emil.walthemath@byteflow-reutershagen.de">emil.walthemath@byteflow-reutershagen.de</a>
+      <LinkButton
+        class="member-email"
+        href="mailto:emil.walthemath@byteflow-reutershagen.de"
+        icon="i-lucide-mail"
+        subtle
+      >emil.walthemath@byteflow-reutershagen.de</LinkButton>
     </div>
   </section>
 </template>
@@ -73,9 +78,13 @@ h2::after {
 .member-pic {
   grid-area: Pic;
   border-radius: 8px;
+  height: 200px;
+  margin-top: 0;
 }
 .member-name {
   grid-area: name;
+  font-weight: bold;
+  font-size: 1.4rem;
 }
 .member-description {
   grid-area: description;
