@@ -6,7 +6,7 @@
     <img src="/images/team.jpeg" alt="Das Team von Byteflow" />
     <p>
       Wir sind Byteflow Reutershagen, die Schülerfirma des Gymnasiums
-      Reutershagen aus Rostock. 
+      Reutershagen aus Rostock.
     </p>
     <p>
       Sie wurde im Juni 2024 von 6 Schülerinnen und Schülern gegründet, und
@@ -15,16 +15,20 @@
       Projekten.
     </p>
     <p>
-      Seit jeher ist die Softwareentwicklung unsere große Stärke, doch durch neue
-      Mitglieder kamen neue Komptenzen in unsere Firma, sodass unsere 3D-
+      Seit jeher ist die Softwareentwicklung unsere große Stärke, doch durch
+      neue Mitglieder kamen neue Komptenzen in unsere Firma, sodass unsere 3D-
       Drucker aus unserem Angebot mittlerweile nicht mehr wegzudenken sind.
     </p>
     <p>
-      Seit diesem Jahr wollen wir auch unser Angebot in Richtung des Videoschnitts
-      mit neuen, professionellen Mitglieder erweitern.
+      Seit diesem Jahr wollen wir auch unser Angebot in Richtung des
+      Videoschnitts mit neuen, professionellen Mitglieder erweitern.
     </p>
     <div class="member-div">
-      <img class="member-pic" src="/images/people/placeholder.png" alt="person">
+      <img
+        class="member-pic"
+        src="/images/people/placeholder.png"
+        alt="person"
+      />
       <h2 class="member-name">Emil Walthemath - Vorstand</h2>
       <p class="member-description">
         Kümmert sich um die Vermarktung und schneidet Videos.
@@ -32,9 +36,10 @@
       <LinkButton
         class="member-email"
         href="mailto:emil.walthemath@byteflow-reutershagen.de"
-        icon="i-lucide-mail"
+        icon="lucide:mail"
         subtle
-      >emil.walthemath@byteflow-reutershagen.de</LinkButton>
+        >emil.walthemath@byteflow-reutershagen.de</LinkButton
+      >
     </div>
   </section>
 </template>
@@ -66,9 +71,9 @@ h2::after {
   position: relative;
   display: grid;
   grid-template-areas:
-      "Pic  name"
-      "Pic  description"
-      "Pic  email";
+    "Pic  name"
+    "Pic  description"
+    "Pic  email";
   align-items: center;
   gap: 1rem;
   padding: 1rem;

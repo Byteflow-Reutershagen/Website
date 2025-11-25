@@ -27,12 +27,12 @@ function cycleTheme() {
     <div id="header-buttons" class="flex items-center gap-2">
       <button id="toggle-theme" @click="cycleTheme">
         <Icon
-          :name="'i-lucide-' + icons[getModeIndex(colorMode.preference)]"
+          :name="'lucide:' + icons[getModeIndex(colorMode.preference)]"
           size="20"
         />
       </button>
       <button v-if="$route.path !== '/'" @click="navigateTo('/')">
-        <Icon name="i-lucide-home" size="20" />
+        <Icon name="lucide:home" size="20" />
       </button>
     </div>
   </header>

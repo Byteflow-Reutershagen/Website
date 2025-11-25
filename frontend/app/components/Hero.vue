@@ -1,21 +1,19 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div
-    id="hero"
-    class="flex flex-col items-center justify-center text-center"
-  >
+  <div id="hero" class="flex flex-col items-center justify-center text-center">
     <h1 class="text-4xl font-bold mb-4 px-2 text-balance">
       Kreativität, die funktioniert
     </h1>
     <p class="text-lg mb-6 px-2 text-balance">
-      Wir entwickeln Websites, schneiden Videos und drucken Ideen - professionell und mit Liebe zum Detail
+      Wir entwickeln Websites, schneiden Videos und drucken Ideen -
+      professionell und mit Liebe zum Detail
     </p>
     <div class="flex flex-col sm:flex-row gap-2">
       <LinkButton
         href="https://youtu.be/DVP4fCv98pQ"
         target="_blank"
-        icon="i-lucide-square-play"
+        icon="lucide:square-play"
       >
         Introvideo ansehen
       </LinkButton>
@@ -36,7 +34,7 @@
   position: relative;
   overflow-x: hidden;
   overflow-y: clip;
-  height: calc(var(--spacing)*75);
+  height: calc(var(--spacing) * 75);
 }
 
 .light-mode #hero {

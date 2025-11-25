@@ -12,7 +12,7 @@ const { data: article } = await useFetch<{ id: string; content: string }>(
     <p class="mb-3">
       Hier veröffentlichen wir unsere wichtigsten Neuigkeiten.
       <a href="/newsroom" class="text-maya-blue">
-        Mehr <Icon name="i-lucide-chevron-right" class="relative top-[3px]" />
+        Mehr <Icon name="lucide:chevron-right" class="relative top-[3px]" />
       </a>
     </p>
     <ArticlePreview :article="article" />

@@ -7,37 +7,33 @@
     <div class="flex flex-wrap gap-2">
       <LinkButton
         href="mailto:kontakt@byteflow-reutershagen.de"
-        icon="i-lucide-mail"
+        icon="lucide:mail"
         subtle
       >
         kontakt@byteflow-reutershagen.de
       </LinkButton>
     </div>
-    <br>
+    <br />
     <div class="flex flex-wrap gap-2">
       <LinkButton
         href="https://www.instagram.com/byteflow_reutershagen/"
-        icon="i-lucide-instagram"
+        icon="lucide:instagram"
         subtle
       >
         Byteflow_Reutershagen
       </LinkButton>
-      <LinkButton
-        href=""
-        icon="i-lucide-facebook"
-        subtle
-      >
+      <LinkButton href="" icon="lucide:facebook" subtle>
         Byteflow Reutershagen
       </LinkButton>
       <LinkButton
         href="https://www.tiktok.com/@byteflow.reutershagen"
-        icon="i-fa7-brands-tiktok"
+        icon="fa7-brands:tiktok"
         subtle
       >
         byteflow.reutershagen
       </LinkButton>
     </div>
-    <br>
+    <br />
     <p>Mathias-Thesen-Straße 17, 18069 Rostock</p>
   </section>
 </template>

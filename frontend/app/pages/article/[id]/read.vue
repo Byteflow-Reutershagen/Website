@@ -9,11 +9,11 @@ const { data: content } = await useFetch(
 <template>
   <div class="min-h-screen">
     <div class="px-6 py-10 mx-auto max-w-5xl">
-      <LinkButton href="/newsroom" icon="i-lucide-newspaper" class="mb-2 w-max">
+      <LinkButton href="/newsroom" icon="lucide:newspaper" class="mb-2 w-max">
         Zum Newsroom
       </LinkButton>
       <div id="date" class="flex flex-row gap-1.5 items-center mt-4">
-        <Icon name="i-lucide-calendar" />
+        <Icon name="lucide:calendar" />
         {{
           new Date(route.params.id).toLocaleString("de-DE", {
             dateStyle: "long",
