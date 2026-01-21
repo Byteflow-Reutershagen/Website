@@ -26,31 +26,19 @@ import TeamCard from './TeamCard.vue';
       Seit diesem Jahr wollen wir auch unser Angebot in Richtung des
       Videoschnitts mit neuen, professionellen Mitglieder erweitern.
     </p>
+
     <TeamCard 
       name="Emil Walthemath - Vorstand"
       image="/images/people/placeholder.png"
       description="Kümmert sich um die Vermarktung und schneidet Videos."
       email="emil.walthemath@byteflow-reutershagen.de"
     />
-    
-    <div class="member-div">
-      <img
-        class="member-pic"
-        src="/images/people/placeholder.png"
-        alt="person"
-      />
-      <h2 class="member-name">Degenhard Benedict Markus Dilsner</h2>
-      <p class="member-description">
-        Kümmert sich um die Finanzen und beteiligt sich an der Entwicklung von Websites und Webshops.
-      </p>
-      <LinkButton
-        class="member-email"
-        href="mailto:degenhard.dilsner@byteflow-reutershagen.de"
-        icon="lucide:mail"
-        subtle
-        >degenhard.dilsner@byteflow-reutershagen.de</LinkButton
-      >
-    </div>
+    <TeamCard 
+      name="Degenhard Benedict Markus Dilsner - Vorstand"
+      image="/images/people/placeholder.png"
+      description="Kümmert sich um die Finanzen und beteiligt sich an der Entwicklung von Websites und Webshops."
+      email="degenhard.dilsner@byteflow-reutershagen.de"
+    />
   </section>
 </template>
 
@@ -76,35 +64,5 @@ h2::after {
   height: 2px;
   background-color: var(--color-maya-blue);
   margin: 0.5rem auto;
-}
-.member-div {
-  position: relative;
-  display: grid;
-  grid-template-areas:
-    "Pic  name"
-    "Pic  description"
-    "Pic  email";
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  border-radius: 12px;
-  background-color: #aaa1;
-}
-.member-pic {
-  grid-area: Pic;
-  border-radius: 8px;
-  height: 200px;
-  margin-top: 0;
-}
-.member-name {
-  grid-area: name;
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-.member-description {
-  grid-area: description;
-}
-.member-email {
-  grid-area: email;
 }
 </style>

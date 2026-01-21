@@ -14,24 +14,21 @@
       <div>
         <p class="mt-2">
           Wir entwickeln Websites, Webshops und Tools, die nicht nur gut aussehen,
-          sondern auch wirken.
+          sondern auch wirken.<br>
           Von der ersten Idee bis zur Fertigstellung gestalten wir digitale Lösungen, die
           auf Ihre Ziele zugeschnitten sind – technisch solide, benutzerfreundlich und mit
-          einem Auge für das Detail.
+          einem Auge für das Detail.<br>
           Egal ob Unternehmensseite, Online-Shop oder individuelle Webanwendung: Wir
           denken mit, programmieren sauber und setzen auf langfristige Qualität statt
-          schnellen Kompromissen.
+          schnellen Kompromissen.<br>
         </p>
-        <p class="font-semibold">Wir bieten:</p>
+        <h4 class="font-semibold text-xl">Wir bieten:</h4>
         <ul class="feature-list mt-3 mb-6 text-sm">
           <li>Individuelle Websites & Webshops</li>
           <li>Responsives Design, Integration in bestehende Systeme, Sonderfunktionen</li>
           <li>Wartung, Updates & Optimierung für langfristigen Erfolg</li>
         </ul>
         <div id="languages" class="flex flex-wrap gap-4 mt-4">
-          <!--
-          <img src="/images/languages/unity.svg" alt="Unity" />
-          -->
           <ThemeImage
             light="/images/languages/html.svg"
             dark="/images/languages/html-dark.svg"
@@ -52,19 +49,19 @@
             dark="/images/languages/shopware.png"
             alt="Shopware"
           />
+          <img src="/images/languages/python.svg" alt="Python" />
           <ThemeImage
             light="/images/languages/more.svg"
             dark="/images/languages/more-dark.svg"
             alt="More"
           />
-          <img src="/images/languages/python.svg" alt="Python" />
         </div>
       </div>
     </div>
   </section>
 </template>
 
-<style>
+<style scoped>
 #languages img {
   height: 2.5rem;
 }
@@ -74,6 +71,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   gap: 0.5rem;
+  list-style-type: circle;
 }
 
 .feature-list li {
@@ -88,8 +86,8 @@
 }
 
 .light-mode .feature-list li {
-  background-color: #eee;
-  border-color: #ddd;
+  /*background-color: #eee;
+  border-color: #ddd;*/
   color: #333;
 }
 </style>

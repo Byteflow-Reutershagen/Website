@@ -42,6 +42,8 @@ const props = defineProps<{
     padding: 1rem;
     border-radius: 12px;
     background-color: #aaa1;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .member-pic {
     grid-area: Pic;
