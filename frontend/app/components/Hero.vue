@@ -14,11 +14,12 @@
         href="https://youtu.be/DVP4fCv98pQ"
         target="_blank"
         icon="lucide:square-play"
+        subtle
       >
         Introvideo ansehen
       </LinkButton>
-      <LinkButton href="#kontakt" subtle> Kontaktieren Sie uns </LinkButton>
-      <LinkButton href="#team" subtle> Lernen Sie uns kennen </LinkButton>
+      <LinkButton href="#kontakt" icon="lucide:mail"> Kontaktieren Sie uns </LinkButton>
+      <LinkButton href="#team" icon="lucide:users" subtle > Lernen Sie uns kennen </LinkButton>
     </div>
   </div>
 </template>

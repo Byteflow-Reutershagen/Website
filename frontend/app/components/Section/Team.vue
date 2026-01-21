@@ -1,4 +1,7 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import TeamCard from './TeamCard.vue';
+
+</script>
 
 <template>
   <section id="team" class="flex flex-col items-center text-center my-12">
@@ -23,22 +26,29 @@
       Seit diesem Jahr wollen wir auch unser Angebot in Richtung des
       Videoschnitts mit neuen, professionellen Mitglieder erweitern.
     </p>
+    <TeamCard 
+      name="Emil Walthemath - Vorstand"
+      image="/images/people/placeholder.png"
+      description="Kümmert sich um die Vermarktung und schneidet Videos."
+      email="emil.walthemath@byteflow-reutershagen.de"
+    />
+    
     <div class="member-div">
       <img
         class="member-pic"
         src="/images/people/placeholder.png"
         alt="person"
       />
-      <h2 class="member-name">Emil Walthemath - Vorstand</h2>
+      <h2 class="member-name">Degenhard Benedict Markus Dilsner</h2>
       <p class="member-description">
-        Kümmert sich um die Vermarktung und schneidet Videos.
+        Kümmert sich um die Finanzen und beteiligt sich an der Entwicklung von Websites und Webshops.
       </p>
       <LinkButton
         class="member-email"
-        href="mailto:emil.walthemath@byteflow-reutershagen.de"
+        href="mailto:degenhard.dilsner@byteflow-reutershagen.de"
         icon="lucide:mail"
         subtle
-        >emil.walthemath@byteflow-reutershagen.de</LinkButton
+        >degenhard.dilsner@byteflow-reutershagen.de</LinkButton
       >
     </div>
   </section>
