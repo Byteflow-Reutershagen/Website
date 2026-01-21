@@ -61,7 +61,7 @@
   </section>
 </template>
 
-<style scoped>
+<style>
 #languages img {
   height: 2.5rem;
 }

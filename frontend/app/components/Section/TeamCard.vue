@@ -44,11 +44,13 @@ const props = defineProps<{
     background-color: #aaa1;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    width: 60%;
 }
 .member-pic {
     grid-area: Pic;
     border-radius: 8px;
     height: 200px;
+    min-width: 200px;
     margin-top: 0;
 }
 .member-name {
