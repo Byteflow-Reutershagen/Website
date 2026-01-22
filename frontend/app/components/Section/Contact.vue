@@ -8,7 +8,6 @@
       <LinkButton
         href="mailto:kontakt@byteflow-reutershagen.de"
         icon="lucide:mail"
-        subtle
       >
         kontakt@byteflow-reutershagen.de
       </LinkButton>

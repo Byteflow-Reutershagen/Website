@@ -12,18 +12,15 @@
     <div class="basis-1/2">
       <h3 class="text-2xl font-semibold mb-2">Ihre Website, die wirkt</h3>
       <div>
-        <p class="mt-2">
+        <p class="mb-3">
           Wir entwickeln Websites, Webshops und Tools, die nicht nur gut aussehen,
           sondern auch wirken.<br>
           Von der ersten Idee bis zur Fertigstellung gestalten wir digitale Lösungen, die
           auf Ihre Ziele zugeschnitten sind – technisch solide, benutzerfreundlich und mit
-          einem Auge für das Detail.<br>
-          Egal ob Unternehmensseite, Online-Shop oder individuelle Webanwendung: Wir
-          denken mit, programmieren sauber und setzen auf langfristige Qualität statt
-          schnellen Kompromissen.<br>
+          einem Auge für Details.<br>
         </p>
-        <h4 class="font-semibold text-xl">Wir bieten:</h4>
-        <ul class="feature-list mt-3 mb-6 text-sm">
+        <h4 class="font-semibold text-xl transition">Wir bieten:</h4>
+        <ul class="feature-list mt-1 mb-6 text-sm font-semibold">
           <li>Individuelle Websites & Webshops</li>
           <li>Responsives Design, Integration in bestehende Systeme, Sonderfunktionen</li>
           <li>Wartung, Updates & Optimierung für langfristigen Erfolg</li>
@@ -89,5 +86,9 @@
   /*background-color: #eee;
   border-color: #ddd;*/
   color: #333;
+}
+
+.transition {
+  transition: color var(--dark-mode-transition-duration);
 }
 </style>
