@@ -8,7 +8,7 @@ import TeamCard from './TeamCard.vue';
     <h2 class="text-2xl font-semibold mb-4">Unser Team</h2>
     <img src="/images/team.jpeg" alt="Das Team von Byteflow" />
     <p>
-      Wir sind Byteflow Reutershagen, die Schülerfirma des Gymnasiums
+      Wir sind Byteflow Breutershagen, die Schülerfirma des Gymnasiums
       Reutershagen aus Rostock.
     </p>
     <p>
