@@ -9,7 +9,7 @@
       Software und 3D-Druck für alle
     </h1>
     <p class="text-lg mb-6 px-2 text-balance">
-      Wir gestalten digitale Lösungen, alle aus einer Hand.
+      Wir gestalten digitale Lösungen, alles aus einer Hand.
     </p>
     <div class="flex flex-col sm:flex-row gap-2">
       <LinkButton
